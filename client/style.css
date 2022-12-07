@@ -1,0 +1,98 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+button{
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+#start{
+    color: green;
+    border: 2px solid green;
+}
+#start:hover{
+    background-color: green;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+#stop{
+    color: red;
+    border: 2px solid red;
+}
+#stop:hover{
+    background-color: red;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+.controll_container{
+    padding: 2rem;
+    width: 17rem;
+    height: 17rem;
+    background-color: #3c726d;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    justify-content: space-between;
+}
+.icon_container{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+}
+.controll_container img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 25px;
+    background-color: #b7bddb;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background-color .5s ease-out;
+}
+
+.controll_container img:hover{
+    background-color: #46f301;
+    border: 2px solid #46f301;
+}
+
+.left_right_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#forward, #reverse {
+    padding: 1.5rem .5rem;
+}
+
+#left, #right {
+    padding: .5rem 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+    .controll_container {
+        width: 12rem;
+        height: 12rem;
+    }
+    .controll_container img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        flex-direction: column;
+    }
+}
+
